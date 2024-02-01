@@ -116,22 +116,35 @@ body{
 .toggle-container h1,p{
     margin: 15px 0;
 }
-
-
-
-
-
-
 .sign-up{
     display: none;
-}
-.sign-in{
-    /* display: none; */
 }
 
 .toggle-left{
     display: none;
 }
-.toggle-right{
-    /* display: none; */
+
+.container.active .toggle-left{
+    display: block;
+} 
+.container.active .toggle-right{
+    display: none;
+}
+.container.active .sign-in{
+    display: none; 
+}
+.container.active .sign-up{
+    display: block;
+}
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    border-radius: 0 150px 100px 0;
+    background-color: rgba(165, 42, 42, 0.811);
+}
+.container.active .sign-up{
+    transform: translateX(150%);
+}
+.toggle-container{
+    transition: all 0.5s;
 }
