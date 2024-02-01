@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="mycontainer">
         <div class="form-container sign-in">
             <form>
                 <h1>Sign In</h1>
@@ -47,15 +47,17 @@
                     <div class="toggle-right">
                         <h1>Welcome, Friend!</h1>
                         <p>Enter your personal details to use all of site features</p>
-                        <button class="hidden">SIGN UP</button>
+                        <button class="hidden" id="signup">SIGN UP</button>
                     </div>
                     <div class="toggle-left">
                         <h1>Welcome Back!</h1>
                         <p>Enter your personal details to use all of site features</p>
-                        <button class="hidden">SIGN IN</button>
+                        <button class="hidden" id="signin">SIGN IN</button>
                     </div>
                 </div>
         </div>
     </div>
+
+    <script src="home.js"></script>
 </body>
 </html>
